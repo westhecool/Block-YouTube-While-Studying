@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Block YouTube While Studying",
+    "version": "1.0",
+    "description": "Displays a pop up blocking you from viewing YouTube. (For times like when you're supposed to be studying)",
+    "permissions": ["tabs"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
